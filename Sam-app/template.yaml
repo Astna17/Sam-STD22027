@@ -22,7 +22,7 @@ Resources:
     Properties:
       CodeUri: hello_world/
       Handler: app.lambda_handler
-      Runtime: python3.12.0
+      Runtime: python3.8
       Architectures:
       - x86_64
       Events:
@@ -46,7 +46,7 @@ Resources:
         Ref: ApplicationResourceGroup
       AutoConfigurationEnabled: 'true'
 
-MyApi:
+  MyApi:
     Type: AWS::Serverless::Api
     Properties:
       StageName: prod
