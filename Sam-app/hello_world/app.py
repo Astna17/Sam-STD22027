@@ -35,8 +35,7 @@ def lambda_handler(event, context):
     a = int (event ['queryStringParameters']['a'])
     b = int (event ['queryStringParameters']['b'])
 
-    result  = a + b;
-
+    result  = a + b
     return {
         "statusCode": 200,
         "body": json.dumps(
